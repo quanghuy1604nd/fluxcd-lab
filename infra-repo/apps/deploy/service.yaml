@@ -1,7 +1,8 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name:  example-fluxcd-service
+  name:  example-fluxcd
+  namespace: default
 spec:
   selector:
     app:  example-fluxcd
