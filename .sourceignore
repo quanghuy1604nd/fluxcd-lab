@@ -1,0 +1,5 @@
+# Exclude all
+/*
+
+# Include manifest directories
+!/infra-repo/

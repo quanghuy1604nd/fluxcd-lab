@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  example-fluxcd
+  labels:
+    name:  example-fluxcd
+spec:
+  selector:
+    matchLabels:
+      app: example-fluxcd
+  template:
+    metadata:
+      labels:
+        app:  example-fluxcd
+    spec:
+      containers:
+      - image:  example-fluxcd:v1
+        name:  example-fluxcd
+      restartPolicy: Always
