@@ -15,6 +15,6 @@ spec:
         app:  example-fluxcd
     spec:
       containers:
-      - image:  example-fluxcd:v1
+      - image:  example-fluxcd:v2
         name:  example-fluxcd
       restartPolicy: Always
